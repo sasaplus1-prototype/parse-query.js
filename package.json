@@ -15,5 +15,8 @@
     "compile": "npm run webpack -- --output-file parse-query.js",
     "minify": "npm run webpack -- --optimize-minimize --output-file parse-query.min.js",
     "webpack": "webpack --colors --display-error-details --progress"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
   }
 }
