@@ -1,0 +1,22 @@
+{
+  "name": "parse-query",
+  "version": "0.1.0",
+  "author": "sasa+1 <sasaplus1@gmail.com>",
+  "description": "parse query string",
+  "main": "./index.js",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasaplus1-prototype/parse-query.js.git"
+  },
+  "scripts": {
+    "build": "npm run compile && npm run minify",
+    "compile": "npm run webpack -- --output-file parse-query.js",
+    "minify": "npm run webpack -- --optimize-minimize --output-file parse-query.min.js",
+    "webpack": "webpack --colors --display-error-details --progress"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
