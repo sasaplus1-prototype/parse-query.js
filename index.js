@@ -20,7 +20,9 @@ function parseQuery(text) {
   params = text.split('&');
 
   for (i = 0, len = params.length; i < len; ++i) {
-    /=/.exec(params[i]);
+    if (/=/.exec(params[i]) === null) {
+      continue;
+    }
 
     key = RegExp.leftContext;
     value = RegExp.rightContext;
